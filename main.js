@@ -1,5 +1,7 @@
-const form = document.getElementById('form-contato');
+const form = document.getElementById('form-lista');
 let linhas = '';
+let nome = [];
+let telefone = [];
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
@@ -9,9 +11,9 @@ form.addEventListener('submit', function(e){
 });
 
 function adicionaLinha() {
-    const inputNomeContato = document.getElementById('nome-contato');
-    const inputTelefoneContato = document.getElementById('telefone-contato');
-}
+    const inputNomeContato = document.getElementById('nome');
+    const inputTelefoneContato = document.getElementById('telefone');
+
     if (nome.includes(inputNomeContato.value)) {
         alert(`Este contato: ${inputNomeContato.value} já foi salvo`);
     } else {
@@ -25,7 +27,6 @@ function adicionaLinha() {
 
     linhas += linha;
     }
-{
     inputNomeContato.value = '';
     inputTelefoneContato.value = '';
 }
@@ -34,3 +35,4 @@ function atualizaTabela() {
     const corpoTabela = document.querySelector('tbody');
     corpoTabela.innerHTML = linhas;
 }
+

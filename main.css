@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #161515;
+    background-color: #141313;
     padding-top: 100px;
 }
 
@@ -28,6 +28,15 @@ header h1 {
     font-size: 50px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
+    font-style: normal;
+}
+
+header h2 {
+    margin-left: 20px;
+    color: #67db24;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -69,21 +78,18 @@ table {
 
 table th {
     color: #fff;
-    border-bottom: 3px solid #000000f3;
+    border-bottom: 3px solid #302d2df3;
     padding: 16px;
     font-size: 25px;
     font-weight: bold;
 }
 
 table td {
+    color: #a3c741;
     padding: 16px 0;
     text-align: center;
     font-size: 18px;
     border-bottom: 1px solid rgba(67, 67, 71, 0.548);
-}
-
-table td img {
-    height: 30px;
 }
 
 .resultado {
